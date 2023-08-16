@@ -1,0 +1,47 @@
+/* ---- Mixins ---- */
+
+@mixin flexible {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  @mixin list ($g: 30px, $fd, $fw) {
+    display: flex;
+    gap: $g;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+}
+
+/* -- Media Query -- */
+@mixin desktop {
+    @media screen and (max-width: $desktop) {
+      @content;
+    }
+  }
+  @mixin laptop {
+    @media screen and (max-width: $laptop) {
+      @content;
+    }
+  }
+  @mixin tablet-large {
+    @media screen and (max-width: $tablet-large) {
+      @content;
+    }
+  }
+  @mixin tablet {
+    @media screen and (max-width: $tablet) {
+      @content;
+    }
+  }
+  @mixin phablet {
+    @media screen and (max-width: $phablet) {
+      @content;
+    }
+  }
+  @mixin phone {
+    @media screen and (max-width: $phone) {
+      @content;
+    }
+  }

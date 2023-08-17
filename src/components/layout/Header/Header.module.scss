@@ -1,0 +1,46 @@
+@import '/src/styles/resources/';
+
+.wrapper {
+    display: flex;
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 18px 0;
+}
+
+.linksWrap {
+    @include wrap(40px, row, nowrap)
+}
+
+.logo {
+    font-family: $secondary-font-family;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.link {
+    padding: 14px 8px;
+
+    @include transition;
+
+    &:hover, 
+    &:focus{
+        background-color: #316716;
+        color: $white
+    }
+}
+
+.button {
+    padding: 14px 36px;
+
+    background: $accent;
+    color: $white;
+
+    @include transition;
+
+    &:hover, 
+    &:focus{
+        background-color: #316716;
+    }
+}

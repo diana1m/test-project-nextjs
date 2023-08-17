@@ -1,5 +1,11 @@
 /* ---- Mixins ---- */
 
+/* -- Transition -- */
+@mixin transition($delay: $transition-delay) {
+  transition: $transition-property $delay $transition-timing;
+}
+
+/* -- Flex -- */
 @mixin flexible {
     display: flex;
     align-items: center;
@@ -7,7 +13,7 @@
   }
 
   
-  @mixin wrap ($g: 30px, $fd, $fw) {
+  @mixin wrap ($g: 30px, $fd: row, $fw: nowrap) {
     display: flex;
     gap: $g;
     flex-direction: $fd;

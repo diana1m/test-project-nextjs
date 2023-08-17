@@ -1,3 +1,4 @@
-// export default interface IHeader {
-//     logo: 
-// }
+export default interface IHeader {
+    text: string,
+    href: string
+}

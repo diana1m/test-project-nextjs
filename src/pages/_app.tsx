@@ -1,4 +1,5 @@
 import Layout from '@/components/layout/Layout'
+import '@/styles/global.scss'
 
 import type { AppProps } from 'next/app'
 

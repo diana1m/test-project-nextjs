@@ -1,0 +1,11 @@
+/* ---- Footer ---- */
+@import '/src/styles/resources/';
+
+.wrapper{
+    @include wrap(0px);
+    justify-content: space-between;
+    padding: 40px 0;
+    border-top: 1px solid $black;
+    font-size: 16px;
+    opacity: 0.7;
+}

@@ -1,0 +1,28 @@
+/* ---- Button ---- */
+@import '/src/styles/resources/';
+
+.default {
+    padding: 14px 36px;
+    font-size: 16px;
+    @include transition; 
+}
+
+.darkBtn {
+    background: $accent;
+    color: $white;
+
+    &:hover, 
+    &:focus{
+        background-color: #316716;
+    }
+}
+
+.lightBtn {
+    border: 1px solid $accent;
+
+    &:hover, 
+    &:focus{
+        background-color: #316716;
+        color: $white;
+    }
+}

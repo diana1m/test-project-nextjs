@@ -13,7 +13,7 @@
         }
     },
     "image": {
-        "src": "../../public/images/offer/image-1.png",
+        "src": "/images/offer/image-1.png",
         "alt": "girl with leaves",
         "height": 725,
         "width": 495

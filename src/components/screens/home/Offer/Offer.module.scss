@@ -1,0 +1,25 @@
+/* ---- Offer ---- */
+
+@import '/src/styles/resources/';
+
+.wrap {
+    @include wrap;
+    align-items: center;
+}
+
+.title {
+    font-family: $secondary-font-family;
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-bottom: 40px;
+    max-width: 600px
+}
+
+.btnWrap {
+   @include wrap;
+}
+

@@ -7,7 +7,7 @@
   }
 
   
-  @mixin list ($g: 30px, $fd, $fw) {
+  @mixin wrap ($g: 30px, $fd, $fw) {
     display: flex;
     gap: $g;
     flex-direction: $fd;

@@ -1,6 +1,6 @@
 /* ---- Specification ---- */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     border: none;
 }
 
-body{
+body {
     background-color: $bg-color;
     color: $black;
     overflow-x: hidden;

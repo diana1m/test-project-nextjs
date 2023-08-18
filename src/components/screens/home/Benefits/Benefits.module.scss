@@ -11,6 +11,14 @@
     font-size: 48px;
     font-weight: 700;
     margin-bottom: 20px;
+
+    @include tablet {
+        font-size: 44px;
+    }
+
+    @include phablet {
+        font-size: 32px;
+    }
 }
 
 .description {
@@ -20,15 +28,28 @@
 }
 
 .list {
-    @include wrap(30px, _, wrap);
+    @include wrap(30px, row, wrap);
+
+    justify-content: space-between;
 }
 
 .item {
     width: 390px;
-    height: 210px;
     padding: 20px;
     border: 1px solid $accent;
     font-size: 16px;
+
+    @include desktop {
+        width: 31%;
+    }
+
+    @include tablet-large {
+        width: 47%;
+    }
+
+    @include tablet {
+        width: 100%;
+    }
 }
 
 .itemText {

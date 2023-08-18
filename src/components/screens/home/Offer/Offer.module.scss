@@ -5,6 +5,11 @@
 .wrap {
     @include wrap;
     align-items: center;
+
+    @include tablet-large {
+        @include wrap (30px, column-reverse);
+        text-align: center;
+    }
 }
 
 .title {
@@ -12,15 +17,47 @@
     font-size: 52px;
     font-weight: 700;
     margin-bottom: 20px;
+
+    @include laptop {
+        font-size: 48px;
+    }
+
+    @include phablet {
+        font-size: 34px;
+    }
 }
 
 .description {
     margin-bottom: 40px;
-    max-width: 600px;
+    width: 600px;
     opacity: 0.7;
+
+    @include tablet-large {
+        width: 100%
+    }
 }
 
 .btnWrap {
    @include wrap;
+
+   @include tablet-large {
+    justify-content: center;
+   }
+
+   @include phone {
+    flex-wrap: wrap;
+   }
 }
 
+.image {
+    width: 495px;
+
+    @include laptop {
+        width: 450px;
+        height: auto;
+    }
+
+    @include phablet {
+        width: 350px;
+    }
+}

@@ -1,3 +1,5 @@
+/* --- Header --- */
+
 @import '/src/styles/resources/';
 
 .wrapper {
@@ -6,10 +8,23 @@
     justify-content: space-between;
     align-items: baseline;
     padding: 18px 0;
+
+    @include laptop {
+        font-size: 16px;
+    }
 }
 
 .linksWrap {
-    @include wrap(40px, row, nowrap)
+    @include wrap(40px, row, nowrap);
+
+    @include laptop {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    @include tablet-large {
+        display: none;
+    }
 }
 
 .logo {

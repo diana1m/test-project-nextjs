@@ -8,8 +8,7 @@ const OfferImage: FC = () => {
     const {src, alt, height, width}: IImage= data.image;
 
     return(
-        // <Image />
-        <img src={src} alt={alt} width={width} height={height}/> 
+        <Image src={src} alt={alt} width={width} height={height}/> 
     )
 }
 
